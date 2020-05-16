@@ -70,7 +70,14 @@ public class EnterActivity : MonoBehaviour
         if (minutes.text.Equals(""))
             return;
 
-        string record = "\n";
+        string path = System.IO.Path.Combine(Application.persistentDataPath, "record");
+        string record = "";
+        if (System.IO.File.Exists(path))
+        {
+            record += "\n";
+        }
+
+        record += "activity,";
         record += "submitted:" + System.DateTime.Now.ToString() + ",";
         record += "logged_year:" + y.text + ",";
         record += "logged_month:" + m.text + ",";
@@ -88,7 +95,6 @@ public class EnterActivity : MonoBehaviour
         }
         record += "notes:" + notes_text;
 
-        string path = System.IO.Path.Combine(Application.persistentDataPath, "record");
         System.IO.File.AppendAllText(path, record);
     }
 }
