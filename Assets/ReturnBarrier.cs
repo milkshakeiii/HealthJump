@@ -22,6 +22,7 @@ public class ReturnBarrier : MonoBehaviour
         {
             returnMe.transform.position = returnPosition;
             returnMe.transform.localEulerAngles = Vector3.zero;
+            returnMe.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
     }
 }
