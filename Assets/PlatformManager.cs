@@ -6,6 +6,8 @@ public class PlatformManager : MonoBehaviour
 {
     private static PlatformManager instance;
 
+    private List<Platform> platforms = new List<Platform>();
+
     public static PlatformManager GetInstance()
     {
         return instance;
@@ -15,11 +17,17 @@ public class PlatformManager : MonoBehaviour
     void Start()
     {
         instance = this;
+
+        UpdatePlatforms();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void UpdatePlatforms()
     {
-        
+
+    }
+
+    public void AddPlatform(Platform platform)
+    {
+        platforms.Add(platform);
     }
 }
