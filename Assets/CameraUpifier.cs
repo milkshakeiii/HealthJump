@@ -11,10 +11,10 @@ public class CameraUpifier : MonoBehaviour
     private Vector3 yPositionTimeAgo;
     private float lastUpdate = 0f;
 
-    // Start is called before the first frame update
-    void Start()
+    public void Snap()
     {
-        
+        Vector2 tdgoal = (Vector2)gameObject.transform.position + cameraOffset;
+        Camera.main.transform.position = new Vector3(tdgoal.x, tdgoal.y - 0.6f, -10);
     }
 
     // Update is called once per frame

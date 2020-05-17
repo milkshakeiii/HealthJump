@@ -45,6 +45,8 @@ public class EnterBloodPressure : MonoBehaviour
         }
         hr.text = (System.DateTime.Now.Hour % 12).ToString();
         min.text = System.DateTime.Now.Minute.ToString();
+        systolic.text = "";
+        diastolic.text = "";
         if (min.text.Length == 1)
             min.text = "0" + min.text;
         notes.text = "";

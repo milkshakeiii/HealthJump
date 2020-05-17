@@ -12,7 +12,7 @@ public class Platform : MonoBehaviour
     private Vector2 unlockedPosition;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         unlockedPosition = gameObject.transform.position;
         PlatformManager.GetInstance().AddPlatform(this);
@@ -30,7 +30,7 @@ public class Platform : MonoBehaviour
     public void Lock()
     {
         body.SetActive(false);
-        gameObject.transform.position += (Vector3)lockOffset;
+        gameObject.transform.position = (Vector3)unlockedPosition + (Vector3)lockOffset;
     }
 
     private IEnumerator UnlockFloat()

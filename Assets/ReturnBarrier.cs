@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class ReturnBarrier : MonoBehaviour
 {
+    private static ReturnBarrier instance;
+
     public GameObject returnMe;
     public float yLimit;
 
     private Vector2 returnPosition;
 
+    public static ReturnBarrier GetInstance()
+    {
+        if (instance == null)
+            instance = FindObjectOfType<ReturnBarrier>();
+        return instance;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        returnPosition = returnMe.transform.position;
+        
+    }
+
+    public void SetReturnPosition(Vector2 newReturnPosition)
+    {
+        returnPosition = newReturnPosition;
     }
 
     // Update is called once per frame
@@ -23,6 +37,7 @@ public class ReturnBarrier : MonoBehaviour
             returnMe.transform.position = returnPosition;
             returnMe.transform.localEulerAngles = Vector3.zero;
             returnMe.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            returnMe.GetComponent<Rigidbody2D>().angularVelocity = 0f;
         }
     }
 }
