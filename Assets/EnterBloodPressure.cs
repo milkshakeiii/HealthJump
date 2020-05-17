@@ -38,10 +38,15 @@ public class EnterBloodPressure : MonoBehaviour
         d.text = System.DateTime.Now.Day.ToString();
         y.text = System.DateTime.Now.Year.ToString();
         int hour = System.DateTime.Now.Hour;
-        if (hour > 12)
+        if (hour >= 12)
         {
             am.SetActive(false);
             pm.SetActive(true);
+        }
+        else
+        {
+            am.SetActive(true);
+            pm.SetActive(false);
         }
         hr.text = (System.DateTime.Now.Hour % 12).ToString();
         min.text = System.DateTime.Now.Minute.ToString();
@@ -116,7 +121,13 @@ public class EnterBloodPressure : MonoBehaviour
         record += "logged_year:" + y.text + ",";
         record += "logged_month:" + m.text + ",";
         record += "logged_day:" + d.text + ",";
-        record += "logged_hour:" + hr.text + ",";
+        int hrint = int.Parse(hr.text);
+        if (pm.activeSelf)
+        {
+            hrint += 12;
+        }
+        string hrstring = hrint.ToString();
+        record += "logged_hour:" + hrstring + ",";
         record += "logged_minute:" + min.text + ",";
         record += "systolic:" + systolic.text + ",";
         record += "diastolic:" + diastolic.text + ",";
