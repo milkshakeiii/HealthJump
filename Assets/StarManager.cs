@@ -41,7 +41,7 @@ public class StarManager : MonoBehaviour
                 if (starLine.Equals(""))
                     continue;
                 int starNumber = int.Parse(starLine);
-                stars[starNumber].gameObject.SetActive(false);
+                stars[starNumber].SetCaptured();
             }
         }
     }

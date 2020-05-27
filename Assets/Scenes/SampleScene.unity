@@ -1166,6 +1166,11 @@ PrefabInstance:
       propertyPath: starNumber
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 9190167446728659918, guid: 572947c9363624045823c0560484834e,
+        type: 3}
+      propertyPath: unlockNumber
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 572947c9363624045823c0560484834e, type: 3}
 --- !u!4 &109285620 stripped
@@ -2672,6 +2677,11 @@ PrefabInstance:
       propertyPath: starNumber
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 9190167446728659918, guid: 572947c9363624045823c0560484834e,
+        type: 3}
+      propertyPath: unlockNumber
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 572947c9363624045823c0560484834e, type: 3}
 --- !u!4 &239157300 stripped
@@ -3239,6 +3249,11 @@ PrefabInstance:
       propertyPath: starNumber
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 9190167446728659918, guid: 572947c9363624045823c0560484834e,
+        type: 3}
+      propertyPath: unlockNumber
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 572947c9363624045823c0560484834e, type: 3}
 --- !u!4 &313646086 stripped
@@ -3628,6 +3643,11 @@ PrefabInstance:
         type: 3}
       propertyPath: starNumber
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190167446728659918, guid: 572947c9363624045823c0560484834e,
+        type: 3}
+      propertyPath: unlockNumber
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 572947c9363624045823c0560484834e, type: 3}
@@ -4283,7 +4303,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1712494624}
-        m_MethodName: UpdatePlatforms
+        m_MethodName: UpdateUnlocks
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4540,6 +4560,11 @@ PrefabInstance:
         type: 3}
       propertyPath: starNumber
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190167446728659918, guid: 572947c9363624045823c0560484834e,
+        type: 3}
+      propertyPath: unlockNumber
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 572947c9363624045823c0560484834e, type: 3}
@@ -5325,6 +5350,11 @@ PrefabInstance:
       propertyPath: starNumber
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 9190167446728659918, guid: 572947c9363624045823c0560484834e,
+        type: 3}
+      propertyPath: unlockNumber
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 572947c9363624045823c0560484834e, type: 3}
 --- !u!4 &556921340 stripped
@@ -5563,6 +5593,11 @@ PrefabInstance:
         type: 3}
       propertyPath: starNumber
       value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190167446728659918, guid: 572947c9363624045823c0560484834e,
+        type: 3}
+      propertyPath: unlockNumber
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 572947c9363624045823c0560484834e, type: 3}
@@ -8235,6 +8270,11 @@ PrefabInstance:
       propertyPath: starNumber
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 9190167446728659918, guid: 572947c9363624045823c0560484834e,
+        type: 3}
+      propertyPath: unlockNumber
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 572947c9363624045823c0560484834e, type: 3}
 --- !u!4 &877708928 stripped
@@ -9768,6 +9808,11 @@ PrefabInstance:
       propertyPath: starNumber
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 9190167446728659918, guid: 572947c9363624045823c0560484834e,
+        type: 3}
+      propertyPath: unlockNumber
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 572947c9363624045823c0560484834e, type: 3}
 --- !u!4 &983787543 stripped
@@ -10468,6 +10513,11 @@ PrefabInstance:
         type: 3}
       propertyPath: starNumber
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190167446728659918, guid: 572947c9363624045823c0560484834e,
+        type: 3}
+      propertyPath: unlockNumber
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 572947c9363624045823c0560484834e, type: 3}
@@ -14318,6 +14368,11 @@ PrefabInstance:
       propertyPath: starNumber
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 9190167446728659918, guid: 572947c9363624045823c0560484834e,
+        type: 3}
+      propertyPath: unlockNumber
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 572947c9363624045823c0560484834e, type: 3}
 --- !u!4 &1312761307 stripped
@@ -14898,6 +14953,11 @@ PrefabInstance:
         type: 3}
       propertyPath: starNumber
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190167446728659918, guid: 572947c9363624045823c0560484834e,
+        type: 3}
+      propertyPath: unlockNumber
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 572947c9363624045823c0560484834e, type: 3}
@@ -17553,7 +17613,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1712494624}
-        m_MethodName: UpdatePlatforms
+        m_MethodName: UpdateUnlocks
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17905,7 +17965,7 @@ GameObject:
   - component: {fileID: 1712494623}
   - component: {fileID: 1712494624}
   m_Layer: 0
-  m_Name: PlatformManager
+  m_Name: UnlockManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18408,6 +18468,11 @@ PrefabInstance:
       propertyPath: starNumber
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 9190167446728659918, guid: 572947c9363624045823c0560484834e,
+        type: 3}
+      propertyPath: unlockNumber
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 572947c9363624045823c0560484834e, type: 3}
 --- !u!4 &1749050190 stripped
@@ -18731,6 +18796,11 @@ PrefabInstance:
         type: 3}
       propertyPath: starNumber
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190167446728659918, guid: 572947c9363624045823c0560484834e,
+        type: 3}
+      propertyPath: unlockNumber
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 572947c9363624045823c0560484834e, type: 3}
@@ -19237,6 +19307,11 @@ PrefabInstance:
         type: 3}
       propertyPath: starNumber
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190167446728659918, guid: 572947c9363624045823c0560484834e,
+        type: 3}
+      propertyPath: unlockNumber
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 572947c9363624045823c0560484834e, type: 3}
@@ -22040,6 +22115,11 @@ PrefabInstance:
       propertyPath: starNumber
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 9190167446728659918, guid: 572947c9363624045823c0560484834e,
+        type: 3}
+      propertyPath: unlockNumber
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 572947c9363624045823c0560484834e, type: 3}
 --- !u!4 &2104398724 stripped
@@ -22119,6 +22199,11 @@ PrefabInstance:
         type: 3}
       propertyPath: starNumber
       value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190167446728659918, guid: 572947c9363624045823c0560484834e,
+        type: 3}
+      propertyPath: unlockNumber
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 572947c9363624045823c0560484834e, type: 3}
@@ -23369,6 +23454,11 @@ PrefabInstance:
     - target: {fileID: 9190167446728659918, guid: 572947c9363624045823c0560484834e,
         type: 3}
       propertyPath: starNumber
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190167446728659918, guid: 572947c9363624045823c0560484834e,
+        type: 3}
+      propertyPath: unlockNumber
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

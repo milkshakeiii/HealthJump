@@ -15,7 +15,7 @@ public class Platform : MonoBehaviour
     void Awake()
     {
         unlockedPosition = gameObject.transform.position;
-        PlatformManager.GetInstance().AddPlatform(this);
+        UnlockManager.GetInstance().AddPlatform(this);
     }
 
     public void Unlock()

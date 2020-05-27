@@ -5,10 +5,13 @@ using UnityEngine;
 public class Star : MonoBehaviour
 {
     public int starNumber;
+    public int unlockNumber = 0;
+    bool captured = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         StarManager.GetInstance().StarCaught(starNumber);
+        SetCaptured();
         gameObject.SetActive(false);
     }
 
@@ -16,11 +19,24 @@ public class Star : MonoBehaviour
     void Awake()
     {
         StarManager.GetInstance().AddStar(this, starNumber);
+        UnlockManager.GetInstance().AddStar(this);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetCaptured()
     {
-        
+        captured = true;
+    }
+
+    public void Unlock()
+    {
+        if (!captured)
+        {
+            gameObject.SetActive(true);
+        }
+    }
+
+    public void Lock()
+    {
+        gameObject.SetActive(false);
     }
 }

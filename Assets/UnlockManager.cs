@@ -2,28 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlatformManager : MonoBehaviour
+public class UnlockManager : MonoBehaviour
 {
-    private static PlatformManager instance;
+    private static UnlockManager instance;
 
     public GameObject player;
 
     private List<Platform> platforms = new List<Platform>();
+    private List<Star> stars = new List<Star>();
 
-    public static PlatformManager GetInstance()
+    public static UnlockManager GetInstance()
     {
         if (instance == null)
-            instance = FindObjectOfType<PlatformManager>();
+            instance = FindObjectOfType<UnlockManager>();
         return instance;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        UpdatePlatforms(true);
+        UpdateUnlocks(true);
     }
 
-    public void UpdatePlatforms(bool placePlayer)
+    public void AddStar(Star star)
+    {
+        stars.Add(star);
+    }
+
+    public void UpdateUnlocks(bool placePlayer)
     {
         string path = System.IO.Path.Combine(Application.persistentDataPath, "record");
         int unlockNumber;
@@ -37,7 +43,7 @@ public class PlatformManager : MonoBehaviour
         {
             unlockNumber = 0;
         }
-
+        Debug.Log(unlockNumber);
         Platform highestUnlockedPlatform = null;
         foreach (Platform platform in platforms)
         {
@@ -53,6 +59,17 @@ public class PlatformManager : MonoBehaviour
             else
             {
                 platform.Lock();
+            }
+        }
+        foreach (Star star in stars)
+        {
+            if (star.unlockNumber <= unlockNumber)
+            {
+                star.Unlock();
+            }
+            else
+            {
+                star.Lock();
             }
         }
         if (placePlayer)
